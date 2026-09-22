@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yazi keyboard shortcut map</title>
+<meta name="description" content="An offline map of the active Yazi keymap, Whoosh plugin controls, and configured bookmarks on a standard MacBook keyboard.">
+<link rel="stylesheet" href="css/stijl.css">
+<link rel="stylesheet" href="css/yazi.css">
+</head>
+<body>
+<div id="main" role="main">
+  <div id="controls" aria-label="Yazi shortcut map controls">
+    <div class="control-group">
+      <label for="source">Source</label>
+      <select id="source" aria-label="Shortcut source">
+        <option value="keymap">Local keymap</option>
+        <option value="whoosh">Whoosh plugin</option>
+        <option value="bookmarks">Bookmarks file</option>
+      </select>
+    </div>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="control-group">
+      <label for="mode">Mode</label>
+      <select id="mode" aria-label="Shortcut mode"></select>
+    </div>
+    <div class="control-group">
+      <label for="layer">Layer</label>
+      <select id="layer" aria-label="Shortcut layer"></select>
+    </div>
+    <input id="search" type="search" aria-label="Search shortcuts" placeholder="Search key or action">
+  </div>
+
+  <ol id="keyboard" class="macbook-pro" aria-label="MacBook keyboard shortcut map">
+    <li id="esc" data-key="esc" data-default="esc">esc</li>
+    <li id="f1" data-key="f1" data-default="F1">F1</li>
+    <li id="f2" data-key="f2" data-default="F2">F2</li>
+    <li id="f3" data-key="f3" data-default="F3">F3</li>
+    <li id="f4" data-key="f4" data-default="F4">F4</li>
+    <li id="f5" data-key="f5" data-default="F5">F5</li>
+    <li id="f6" data-key="f6" data-default="F6">F6</li>
+    <li id="f7" data-key="f7" data-default="F7">F7</li>
+    <li id="f8" data-key="f8" data-default="F8">F8</li>
+    <li id="f9" data-key="f9" data-default="F9">F9</li>
+    <li id="f10" data-key="f10" data-default="F10">F10</li>
+    <li id="f11" data-key="f11" data-default="F11">F11</li>
+    <li id="f12" data-key="f12" data-default="F12">F12</li>
+    <li id="eject" data-key="eject" data-default=""></li>
+
+    <li id="grave" data-key="grave" data-default="~`"><span>~</span>`</li>
+    <li id="1" data-key="1" data-default="!1"><span>!</span>1</li>
+    <li id="2" data-key="2" data-default="@2"><span>@</span>2</li>
+    <li id="3" data-key="3" data-default="#3"><span>#</span>3</li>
+    <li id="4" data-key="4" data-default="$4"><span>$</span>4</li>
+    <li id="5" data-key="5" data-default="%5"><span>%</span>5</li>
+    <li id="6" data-key="6" data-default="^6"><span>^</span>6</li>
+    <li id="7" data-key="7" data-default="&amp;7"><span>&amp;</span>7</li>
+    <li id="8" data-key="8" data-default="*8"><span>*</span>8</li>
+    <li id="9" data-key="9" data-default="(9"><span>(</span>9</li>
+    <li id="0" data-key="0" data-default=")0"><span>)</span>0</li>
+    <li id="minus" data-key="minus" data-default="_-"><span>_</span>-</li>
+    <li id="equal" data-key="equal" data-default="+="><span>+</span>=</li>
+    <li class="special r" id="delete" data-key="delete" data-default="⌫">⌫</li>
+
+    <li class="special l" id="tab" data-key="tab" data-default="⇥">⇥</li>
+    <li id="q" data-key="q" data-default="Q">Q</li>
+    <li id="w" data-key="w" data-default="W">W</li>
+    <li id="e" data-key="e" data-default="E">E</li>
+    <li id="r" data-key="r" data-default="R">R</li>
+    <li id="t" data-key="t" data-default="T">T</li>
+    <li id="y" data-key="y" data-default="Y">Y</li>
+    <li id="u" data-key="u" data-default="U">U</li>
+    <li id="i" data-key="i" data-default="I">I</li>
+    <li id="o" data-key="o" data-default="O">O</li>
+    <li id="p" data-key="p" data-default="P">P</li>
+    <li id="left-bracket" data-key="left-bracket" data-default="{["><span>{</span>[</li>
+    <li id="right-bracket" data-key="right-bracket" data-default="}]"><span>}</span>]</li>
+    <li id="backslash" data-key="backslash" data-default="|\"><span>|</span>\</li>
+
+    <li class="special l" id="caps-lock" data-key="caps-lock" data-default="Caps Lock">Caps Lock</li>
+    <li id="a" data-key="a" data-default="A">A</li>
+    <li id="s" data-key="s" data-default="S">S</li>
+    <li id="d" data-key="d" data-default="D">D</li>
+    <li id="f" data-key="f" data-default="F">F</li>
+    <li id="g" data-key="g" data-default="G">G</li>
+    <li id="h" data-key="h" data-default="H">H</li>
+    <li id="j" data-key="j" data-default="J">J</li>
+    <li id="k" data-key="k" data-default="K">K</li>
+    <li id="l" data-key="l" data-default="L">L</li>
+    <li id="semicolon" data-key="semicolon" data-default=":;"><span>:</span>;</li>
+    <li id="quote" data-key="quote" data-default="&quot;'"><span>"</span>'</li>
+    <li class="special r" id="enter" data-key="enter" data-default="⏎">⏎</li>
+
+    <li class="special shift l" id="left-shift" data-key="left-shift" data-default="⇧">⇧</li>
+    <li id="z" data-key="z" data-default="Z">Z</li>
+    <li id="x" data-key="x" data-default="X">X</li>
+    <li id="c" data-key="c" data-default="C">C</li>
+    <li id="v" data-key="v" data-default="V">V</li>
+    <li id="b" data-key="b" data-default="B">B</li>
+    <li id="n" data-key="n" data-default="N">N</li>
+    <li id="m" data-key="m" data-default="M">M</li>
+    <li id="comma" data-key="comma" data-default="&lt;,"><span>&lt;</span>,</li>
+    <li id="period" data-key="period" data-default="&gt;."><span>&gt;</span>.</li>
+    <li id="slash" data-key="slash" data-default="?/"> <span>?</span>/</li>
+    <li class="special shift r" id="right-shift" data-key="right-shift" data-default="⇧">⇧</li>
+
+    <li class="special tall l" id="fn" data-key="fn" data-default="fn">fn</li>
+    <li class="special tall less-padding l" id="control" data-key="control" data-default="⌃control"><span>⌃</span>control</li>
+    <li class="special tall less-padding l" id="option-left" data-key="option-left" data-default="⌥option"><span>⌥</span>option</li>
+    <li class="special tall command l" id="command-left" data-key="command-left" data-default="⌘command"><span>⌘</span>command</li>
+    <li class="special tall" id="space" data-key="space" data-default=" "> </li>
+    <li class="special tall command r" id="command-right" data-key="command-right" data-default="⌘command"><span>⌘</span>command</li>
+    <li class="special tall less-padding r" id="option-right" data-key="option-right" data-default="⌥option"><span>⌥</span>option</li>
+    <li class="arrow up" id="arrow-up" data-key="arrow-up" data-default="↑">&#8593;</li>
+    <li class="arrow" id="arrow-left" data-key="arrow-left" data-default="←">&#8592;</li>
+    <li class="arrow down" id="arrow-down" data-key="arrow-down" data-default="↓">&#8595;</li>
+    <li class="arrow" id="arrow-right" data-key="arrow-right" data-default="→">&#8594;</li>
+  </ol>
+
+  <div id="readout" aria-live="polite"><strong id="state">Local keymap · Manager · Direct bindings</strong><span id="matches"></span></div>
+</div>
+<script src="app.js"></script>
+<!-- The shortcut data and controls live in app.js; source provenance is documented in README.md. -->
+<!--
+  const labels = { n: 'Normal', v: 'Visual', i: 'Insert', o: 'Operator', c: 'Command' };
+  const sourceLabels = { local: 'Local', lazy: 'LazyVim', native: 'Neovim Native' };
+  const layerLabels = { base: 'Base', windows: 'Window navigation', 'local-leader': 'Local leader', diagnostics: 'Diagnostics', git: 'Git hunks', lsp: 'LSP', visual: 'Visual modes', operators: 'Operators', 'text-objects': 'Text objects', lines: 'Line operations', 'leader-files': 'Leader · files', 'leader-search': 'Leader · search', 'leader-code': 'Leader · code', 'leader-space': 'Leader · top-level' };
+  const keys = new Map([...document.querySelectorAll('#keyboard [data-key]')].map(key => [key.dataset.key, key]));
+  const canonicalMarkup = new Map([...keys].map(([keyName, key]) => [keyName, key.innerHTML]));
+  const state = { source: 'local', mode: 'n', layer: 'base' };
+  const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const entry = (source, mode, layer, key, label, action, sequence) => ({ source, mode, layer, key, label, action, sequence });
+  const mappings = [
+    entry('local', 'n', 'base', 'h', ['First char', 'H'], 'Move to the first non-blank character', 'H'),
+    entry('local', 'n', 'base', 'l', ['Line end', 'L'], 'Move to the end of the line', 'L'),
+    entry('local', 'v', 'base', 'h', ['First char', 'H'], 'Move selection to the first non-blank character', 'H'),
+    entry('local', 'v', 'base', 'l', ['Line end', 'L'], 'Move selection to the end of the line', 'L'),
+    entry('local', 'n', 'base', 'j', ['Down 5', 'J'], 'Move down 5 lines', 'J'),
+    entry('local', 'n', 'base', 'k', ['Up 5', 'K'], 'Move up 5 lines', 'K'),
+    entry('local', 'n', 'windows', 'h', ['Left win', 'Ctrl-h'], 'Go to the left window', 'Ctrl-h'),
+    entry('local', 'n', 'windows', 'j', ['Lower win', 'Ctrl-j'], 'Go to the lower window', 'Ctrl-j'),
+    entry('local', 'n', 'windows', 'k', ['Upper win', 'Ctrl-k'], 'Go to the upper window', 'Ctrl-k'),
+    entry('local', 'n', 'windows', 'l', ['Right win', 'Ctrl-l'], 'Go to the right window', 'Ctrl-l'),
+    entry('local', 'n', 'local-leader', 'v', ['V block', 'Space v'], 'Enter Visual Block mode', 'Space v'),
+    entry('local', 'n', 'base', 'f7', ['Next diff', 'F7'], 'Show the next diff', 'F7'),
+    entry('local', 'n', 'base', 'eject', ['Prev diff', 'F19'], 'Show the previous diff; configured as F19', 'F19'),
+    entry('local', 'n', 'local-leader', 'm', ['Markdown', 'Space u m'], 'Toggle Markdown rendering', 'Space u m'),
+
+    entry('lazy', 'n', 'base', 'space', ['Leader', 'Space'], 'Open the LazyVim leader namespace', 'Space'),
+    entry('lazy', 'n', 'base', 'k', ['Hover', 'K'], 'Show hover documentation', 'K'),
+    entry('lazy', 'n', 'lsp', 'd', ['Definition', 'g d'], 'Go to definition', 'g d'),
+    entry('lazy', 'n', 'lsp', 'r', ['Refs', 'g r'], 'Show references', 'g r'),
+    entry('lazy', 'n', 'diagnostics', 'right-bracket', ['Next diag', '] d'], 'Go to the next diagnostic', '] d'),
+    entry('lazy', 'n', 'diagnostics', 'left-bracket', ['Prev diag', '[ d'], 'Go to the previous diagnostic', '[ d'),
+    entry('lazy', 'n', 'git', 'right-bracket', ['Next hunk', '] h'], 'Go to the next git hunk', '] h'),
+    entry('lazy', 'n', 'git', 'left-bracket', ['Prev hunk', '[ h'], 'Go to the previous git hunk', '[ h'),
+    entry('lazy', 'n', 'leader-files', 'f', ['Find files', 'Space f f'], 'Find files with the Snacks picker', 'Space f f'),
+    entry('lazy', 'n', 'leader-files', 'r', ['Recent files', 'Space f r'], 'Open recent files with the picker', 'Space f r'),
+    entry('lazy', 'n', 'leader-files', 'b', ['Buffers', 'Space f b'], 'List open buffers with the picker', 'Space f b'),
+    entry('lazy', 'n', 'leader-files', 'e', ['Explorer', 'Space e'], 'Open the Snacks file explorer', 'Space e'),
+    entry('lazy', 'n', 'leader-search', 'slash', ['Grep files', 'Space /'], 'Grep in files with the Snacks picker', 'Space /'),
+    entry('lazy', 'n', 'leader-search', 'g', ['Live grep', 'Space s g'], 'Live grep with the picker', 'Space s g'),
+    entry('lazy', 'n', 'leader-search', 'r', ['Resume', 'Space s r'], 'Resume the last picker', 'Space s r'),
+    entry('lazy', 'n', 'leader-code', 'a', ['Code', 'Space c a'], 'Run a code action', 'Space c a'),
+    entry('lazy', 'n', 'leader-code', 'r', ['Rename', 'Space c r'], 'Rename the symbol under the cursor', 'Space c r'),
+    entry('lazy', 'n', 'leader-space', 'space', ['Find files', 'Space Space'], 'Find files with the picker', 'Space Space'),
+
+    entry('native', 'n', 'base', 'i', ['Insert', 'i'], 'Enter Insert mode before the cursor', 'i'),
+    entry('native', 'n', 'base', 'a', ['Append', 'a'], 'Enter Insert mode after the cursor', 'a'),
+    entry('native', 'n', 'base', 'o', ['Open line', 'o'], 'Open a new line below and Insert', 'o'),
+    entry('native', 'n', 'base', 'u', ['Undo', 'u'], 'Undo the last change', 'u'),
+    entry('native', 'n', 'base', 'r', ['Redo', 'Ctrl-r'], 'Redo the last undone change', 'Ctrl-r'),
+    entry('native', 'v', 'visual', 'v', ['Visual', 'v / V', 'Ctrl-v'], 'Select characterwise, linewise, or blockwise', 'v / V / Ctrl-v'),
+    entry('native', 'v', 'base', 'x', ['Delete', 'x'], 'Delete the selected text', 'x'),
+    entry('native', 'i', 'base', 'esc', ['Normal mode', 'Esc'], 'Return to Normal mode', 'Esc'),
+    entry('native', 'o', 'operators', 'd', ['Delete', 'd'], 'Start the delete operator', 'd'),
+    entry('native', 'o', 'operators', 'c', ['Change', 'c'], 'Start the change operator', 'c'),
+    entry('native', 'o', 'operators', 'y', ['Yank', 'y'], 'Start the yank operator', 'y'),
+    entry('native', 'o', 'text-objects', 'w', ['Word', 'w'], 'Move by a word as an operator motion', 'w'),
+    entry('native', 'o', 'text-objects', 'i', ['Inner', 'i w'], 'Select an inner word text object', 'i w'),
+    entry('native', 'o', 'text-objects', 'a', ['Around', 'a w'], 'Select an around-word text object', 'a w'),
+    entry('native', 'n', 'lines', 'd', ['Del line', 'dd'], 'Delete the current line', 'dd'),
+    entry('native', 'n', 'lines', 'y', ['Yank line', 'yy'], 'Yank the current line', 'yy'),
+    entry('native', 'n', 'lines', 'p', ['Put line', 'p'], 'Put the yanked text after the cursor', 'p'),
+    entry('native', 'c', 'base', 'semicolon', ['Command', ':'], 'Open the Ex command-line', ':'),
+    entry('native', 'c', 'base', 'slash', ['Search', '/'], 'Open the search command-line', '/'),
+  ];
+
+  const layersFor = () => [...new Set(mappings.filter(item => item.source === state.source && item.mode === state.mode).map(item => item.layer))];
+  const layerSelect = document.querySelector('#layer');
+  const refreshLayers = () => {
+    const available = layersFor();
+    if (!available.includes(state.layer)) state.layer = available[0] || 'base';
+    layerSelect.innerHTML = available.map(layer => `<option value="${esc(layer)}">${esc(layerLabels[layer] || layer)}</option>`).join('');
+    layerSelect.value = state.layer;
+  };
+  const search = document.querySelector('#search');
+  const render = () => {
+    document.querySelectorAll('#keyboard [data-key]').forEach(key => {
+      key.innerHTML = canonicalMarkup.get(key.dataset.key);
+      key.classList.remove('mapped', 'search-dim', 'search-match');
+      key.removeAttribute('title');
+      key.removeAttribute('aria-label');
+    });
+    const query = search.value.trim().toLowerCase();
+    const active = mappings.filter(item => item.source === state.source && item.mode === state.mode && (item.layer === state.layer || (query && `${item.sequence} ${item.action} ${sourceLabels[item.source]}`.toLowerCase().includes(query))));
+    const visible = active.filter(item => !query || `${item.sequence} ${item.action} ${sourceLabels[item.source]}`.toLowerCase().includes(query));
+    active.forEach(item => {
+      const key = keys.get(item.key);
+      if (!key) return;
+      key.classList.add('mapped');
+      if (query && visible.includes(item)) key.classList.add('search-match');
+      if (query && !visible.includes(item)) key.classList.add('search-dim');
+      key.innerHTML = `<span class="map-label">${item.label.map(line => `<span class="map-line">${esc(line)}</span>`).join('')}</span>`;
+      key.title = `${item.sequence}: ${item.action} · ${sourceLabels[item.source]}`;
+      key.setAttribute('aria-label', `${item.sequence}: ${item.action}. Source: ${sourceLabels[item.source]}. Mode: ${labels[item.mode]}.`);
+    });
+    document.querySelector('#state').textContent = `${sourceLabels[state.source]} · ${labels[state.mode]} · ${layerLabels[state.layer] || state.layer}`;
+    const matches = document.querySelector('#matches');
+    if (query) matches.textContent = ` ${visible.length} match${visible.length === 1 ? '' : 'es'}${visible.length ? ': ' + visible.map(item => `${item.sequence} - ${item.action}`).join(' | ') : ''}`;
+    else matches.textContent = ` ${active.length} shortcut${active.length === 1 ? '' : 's'} in this layer`;
+  };
+
+  document.querySelector('#source').addEventListener('change', event => {
+    state.source = event.target.value;
+    refreshLayers();
+    render();
+  });
+  document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-mode]').forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    state.mode = button.dataset.mode;
+    refreshLayers();
+    render();
+  }));
+  layerSelect.addEventListener('change', event => {
+    state.layer = event.target.value;
+    render();
+  });
+  search.addEventListener('input', render);
+  refreshLayers();
+  render();
+})();
+</script>
+-->
+</body>
+</html>

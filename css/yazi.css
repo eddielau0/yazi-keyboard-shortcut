@@ -1,0 +1,84 @@
+/* Yazi-specific overlay. Keyboard geometry remains byte-identical in css/stijl.css. */
+#controls {
+  position: absolute;
+  z-index: 10;
+  top: 14px;
+  left: 16px;
+  box-sizing: border-box;
+  width: 1199px;
+  height: 45px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: nowrap;
+  background: transparent;
+  border: 0;
+  font: 13px/1.2 Arial, Helvetica, sans-serif;
+  color: #111;
+}
+#controls label { font-weight: bold; margin-right: -3px; }
+#controls button, #controls select, #controls input {
+  height: 30px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+}
+#controls button { padding: 0 9px; cursor: pointer; }
+#controls button:hover, #controls button:focus-visible, #controls button.active {
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+#controls select, #controls input { padding: 0 7px; }
+#controls input { width: 180px; }
+#controls .control-group { display: flex; align-items: center; gap: 5px; }
+#controls .rule { width: 1px; height: 24px; background: rgba(0, 0, 0, .3); margin: 0 2px; }
+#controls .control-group, #controls .rule, #controls button, #controls select, #controls input { flex: 0 0 auto; }
+#readout {
+  position: absolute;
+  z-index: 8;
+  top: 555px;
+  left: 16px;
+  box-sizing: border-box;
+  width: 1199px;
+  padding: 0;
+  color: #333;
+  font: 13px/1.35 Arial, Helvetica, sans-serif;
+}
+#readout strong { font-weight: bold; }
+#matches { margin-left: 10px; }
+#keyboard li.mapped { color: #fff; background-color: #161616; }
+#keyboard li.search-dim { opacity: .3; }
+#keyboard li.search-match { outline: 3px solid #fff; outline-offset: 1px; }
+#keyboard li .map-label {
+  position: absolute;
+  top: 50%; right: 0; left: 0;
+  transform: translateY(-50%);
+  display: block;
+  height: auto;
+  padding: 0;
+  line-height: 22px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+#keyboard li.special .map-label {
+  position: absolute;
+  top: 50%; right: 0; left: 0;
+  transform: translateY(-50%);
+  display: block;
+  height: auto;
+  padding: 0;
+  line-height: 22px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+#keyboard li.special.multi-line .map-label { line-height: 23px; font-size: 13px; }
+#keyboard li .map-line { display: block; height: 22px; line-height: 22px; }
+#keyboard li.special .map-line { position: static; display: block; height: 22px; line-height: 22px; }
+@media (max-width: 1250px) {
+  body { overflow-x: auto; }
+  #main { margin-left: 0; margin-right: 0; }
+}
